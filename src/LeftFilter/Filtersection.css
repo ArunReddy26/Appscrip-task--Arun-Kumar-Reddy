@@ -1,0 +1,88 @@
+.filter-container {
+    transition: width 0.3s ease-in-out;
+    max-width: 300px;
+  }
+  
+  .filter-container.visible {
+    display: block;
+    width: 300px;
+  }
+  
+  .filter-container.hidden {
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .toggle-filter {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .toggle-filter:hover {
+    text-decoration: underline;
+  }
+  
+  .filter-box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .filter-item p {
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .filter-options {
+    margin-top: 8px;
+    padding-left: 16px;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 16px 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .filter-container {
+      max-width: 250px;
+    }
+  
+    .filter-box {
+      padding: 12px;
+    }
+  
+    .filter-options label {
+      font-size: 13px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .filter-container {
+      max-width: 200px;
+      font-size: 14px;
+    }
+  
+    .filter-item p {
+      font-size: 14px;
+    }
+  
+    .filter-options label {
+      font-size: 12px;
+    }
+  
+    .toggle-filter {
+      font-size: 12px;
+    }
+  }
+  
